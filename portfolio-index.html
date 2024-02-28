@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney Huddleston</title>
+    <style>
+        @font-face {
+            font-family: 'BSB Text Classic';
+            src: url('Fonts/BSB Text Classic.ttf') format('truetype');
+        body {
+            font-family: 'BSB Text Classic', sans-serif;
+        }}
+    </style>
+    <link rel="stylesheet" href="portfolio-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <div id="landing" class="page">
+        <div class="content" data-aos="fade-right">
+            <h1>SYDNEY HUDDLESTON</h1>
+            <a href="#about">Learn More</a>
+        </div>
+    </div>
+
+    <div id="about" class="page">
+        <div class="content" data-aos="fade-left">
+            <h2>ABOUT ME</h2>
+            <p>Sydney Huddleston is a Solutions Engineer, hobbyist, and Rubick's Cube Solver.</p>
+            <a href="#latest-work">See My Latest Work</a>
+        </div>
+    </div>
+
+    <div id="latest-work" class="page">
+        <div class="content" data-aos="zoom-in">
+            <h2>LATEST WORK</h2>
+            <p>Insert your latest work/projects here.</p>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </div>
+
+    <div id="contact" class="page">
+        <div class="content" data-aos="slide-up">
+            <h2>CONTACT ME</h2>
+            <form action="https://formspree.io/f/mvoergvj" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>        
+    </div>
+
+    <nav class="navbar">
+        <a href="#landing">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#latest-work">WORK</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <script src="portfolio-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
